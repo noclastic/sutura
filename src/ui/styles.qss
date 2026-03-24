@@ -1,0 +1,116 @@
+QMainWindow {
+    background-color: #F8FAFC;
+}
+
+/* Aplicar color base solo a elementos centrales, no a diálogos nativos */
+#CentralWidget, QListWidget, QLineEdit, QLabel {
+    font-family: 'Outfit', 'Inter', 'Segoe UI', sans-serif;
+    color: #1E293B;
+}
+
+/* ScrollBars */
+QScrollBar:vertical {
+    border: none;
+    background: #F1F5F9;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical {
+    background: #CBD5E1;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+/* Progress Bar */
+QProgressBar {
+    background-color: #E2E8F0;
+    border: none;
+    height: 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+QProgressBar::chunk {
+    background-color: #3B82F6;
+    border-radius: 4px;
+}
+
+/* GroupBox and List */
+QListWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+}
+QListWidget::item {
+    background: #F8FAFC;
+    border: 1px solid #F1F5F9;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 4px;
+}
+QListWidget::item:selected {
+    background-color: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    color: #2563EB;
+}
+
+/* Inputs */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+QLineEdit:focus {
+    border: 1px solid #3B82F6;
+}
+
+/* Drop Area */
+#DropArea {
+    background-color: #FFFFFF;
+    border: 2px dashed #CBD5E1;
+    border-radius: 12px;
+}
+#DropArea:hover {
+    border-color: #3B82F6;
+    background-color: #F8FAFC;
+}
+
+/* Primary Button */
+#MergeButton {
+    background-color: #2563EB;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+}
+#MergeButton:hover {
+    background-color: #1D4ED8;
+}
+#MergeButton:pressed {
+    background-color: #1E40AF;
+}
+
+/* Secondary Button */
+#SideButton {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    color: #475569;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+#SideButton:hover {
+    background-color: #F1F5F9;
+    border-color: #CBD5E1;
+}
+
+/* Labels and Title */
+#AppTitle {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1E293B;
+}
