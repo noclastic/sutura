@@ -264,8 +264,21 @@ class MainWindow(QMainWindow):
         QMessageBox.critical(self, "Error", f"Ocurrió un error:\n{message}")
 
     def _show_about(self):
-        QMessageBox.about(self, "Acerca de Sutura", 
-                        "Sutura versión Alpha\n\nDesarrollado como una alternativa profesional offline para fusionar PDFs.\n\nPulchraTech")
+        info_html = (
+            "<div style='text-align: center; font-family: sans-serif;'>"
+            "<h2 style='color: #2c3e50;'>Sutura</h2>"
+            "<p style='color: #7f8c8d;'><b>Versión:</b> 1.0.0</p>"
+            "<br>"
+            "<p><b>Creador:</b> Roberto Getino García</p>"
+            "<p><b>Sitio Web:</b> <a href='https://sutura.pulchratech.com' style='color: #3498db; text-decoration: none;'>https://sutura.pulchratech.com</a></p>"
+            "<p><b>GitHub:</b> <a href='https://www.github.com/noclastic/sutura' style='color: #3498db; text-decoration: none;'>https://www.github.com/noclastic/sutura</a></p>"
+            "<hr style='border: 0; height: 1px; background: #ecf0f1; margin: 15px 0;'>"
+            "<p style='color: #34495e; font-size: 13px; text-align: justify;'>"
+            "Sutura garantiza la privacidad de tus documentos fusionando archivos PDF de forma completamente local."
+            "</p>"
+            "</div>"
+        )
+        QMessageBox.about(self, "Sutura", info_html)
 
     def _show_logs(self):
         log_path = get_log_file_path()
