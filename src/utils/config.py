@@ -1,7 +1,7 @@
 import json
 import os
 
-CONFIG_FILE = os.path.join(os.path.expanduser("~"), ".genpdf_config.json")
+CONFIG_FILE = os.path.join(os.path.expanduser("~"), ".sutura_config.json")
 
 def load_config():
     if os.path.exists(CONFIG_FILE):

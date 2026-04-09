@@ -44,6 +44,7 @@ class MainWindow(QMainWindow):
         # Drag & Drop Area
         self.drop_area = DragDropArea(self)
         self.drop_area.files_dropped.connect(self.add_files)
+        self.drop_area.clicked.connect(self._on_add_pdf_clicked)
         left_column.addWidget(self.drop_area)
 
         # File List Group

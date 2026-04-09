@@ -1,4 +1,4 @@
-# 📌 Sutura version Alpha
+# 📌 Sutura version 1.0.0.
 
 Fusiona archivos PDF sin internet
 

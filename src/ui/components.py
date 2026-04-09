@@ -5,6 +5,7 @@ import os
 
 class DragDropArea(QFrame):
     files_dropped = Signal(list)
+    clicked = Signal()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -45,4 +46,4 @@ class DragDropArea(QFrame):
     def mousePressEvent(self, event):
         # Allow clicking as well
         if event.button() == Qt.LeftButton:
-            self.parent()._on_add_pdf_clicked() # Accessing parent method (a bit hacky but works for this structure)
+            self.clicked.emit()

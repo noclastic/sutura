@@ -2,7 +2,7 @@ import sys
 import os
 import time
 from PySide6.QtWidgets import QApplication, QSplashScreen
-from PySide6.QtGui import QPixmap, QIcon
+from PySide6.QtGui import QPixmap, QIcon, QPainter, QFont, QColor, QLinearGradient
 from PySide6.QtCore import Qt, QTimer
 from src.ui.main_window import MainWindow
 from src.utils.logger import logger
@@ -25,12 +25,32 @@ def main():
     
     ensure_assets()
 
-    # Splash Screen
-    splash_pix = QPixmap("src/assets/splash.png")
-    if splash_pix.isNull():
-        # Fallback if splash is missing
-        splash_pix = QPixmap(600, 400)
-        splash_pix.fill(Qt.white)
+    # Splash Screen programático (Sutura)
+    splash_pix = QPixmap(600, 400)
+    splash_pix.fill(Qt.transparent)
+    
+    painter = QPainter(splash_pix)
+    painter.setRenderHint(QPainter.Antialiasing)
+    
+    # Fondo con degradado
+    grad = QLinearGradient(0, 0, 600, 400)
+    grad.setColorAt(0, QColor("#1e293b"))
+    grad.setColorAt(1, QColor("#0f172a"))
+    painter.fillRect(0, 0, 600, 400, grad)
+    
+    # Texto principal
+    painter.setPen(QColor("#38bdf8"))
+    font = QFont("Arial", 50, QFont.Bold)
+    painter.setFont(font)
+    painter.drawText(splash_pix.rect(), Qt.AlignCenter, "SUTURA")
+    
+    # Subtítulo
+    painter.setPen(QColor("#94a3b8"))
+    font_sub = QFont("Arial", 16)
+    painter.setFont(font_sub)
+    painter.drawText(0, 260, 600, 50, Qt.AlignCenter, "Fusionador de PDFs Profesional")
+    
+    painter.end()
     
     splash = QSplashScreen(splash_pix, Qt.WindowStaysOnTopHint)
     splash.show()
