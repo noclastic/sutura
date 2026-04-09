@@ -9,13 +9,14 @@ from src.ui.components import DragDropArea
 from src.core.pdf_processor import PDFMergeThread
 from src.utils.config import get_last_folder, set_last_folder
 from src.utils.logger import logger, get_log_file_path
+from src.utils.resource_path import get_resource_path
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Sutura - Fusionador de PDFs seguro")
         self.setMinimumSize(850, 650)
-        self.setWindowIcon(QIcon("src/assets/icon.png"))
+        self.setWindowIcon(QIcon(get_resource_path("src/assets/icon.png")))
         
         self.init_ui()
         self.init_menu()
@@ -172,7 +173,7 @@ class MainWindow(QMainWindow):
 
     def _load_styles(self):
         try:
-            with open("src/ui/styles.qss", "r") as f:
+            with open(get_resource_path("src/ui/styles.qss"), "r") as f:
                 self.setStyleSheet(f.read())
         except Exception:
             logger.error("No se pudo cargar el archivo QSS")

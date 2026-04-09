@@ -6,12 +6,13 @@ from PySide6.QtGui import QPixmap, QIcon, QPainter, QFont, QColor, QLinearGradie
 from PySide6.QtCore import Qt, QTimer
 from src.ui.main_window import MainWindow
 from src.utils.logger import logger
+from src.utils.resource_path import get_resource_path
 
 def ensure_assets():
     """Ensure minimal assets exist to avoid crash if images are missing."""
-    os.makedirs("src/assets", exist_ok=True)
-    # If icons or splash were not copied correctly, create empty or use system defaults if possible
-    # We assumed they were copied via powershell in previous step.
+    # When bundled, we don't want to try to create folders inside the internal structure
+    # This function is mostly for dev mode now.
+    pass
 
 def main():
     app = QApplication(sys.argv)

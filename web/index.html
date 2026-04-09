@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sutura — Fusionador de PDFs offline y seguro</title>
+    <meta name="description" content="Sutura fusiona, ordena y organiza tus archivos PDF sin conexión a internet. Diseñado para profesionales que valoran la privacidad de sus documentos.">
+    <meta name="keywords" content="PDF, fusionar, merge, offline, seguro, privacidad, desktop, Windows">
+    <meta name="author" content="Roberto Getino — PulchraTech">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sutura — Fusionador de PDFs offline y seguro">
+    <meta property="og:description" content="Fusiona, ordena y organiza tus archivos PDF sin conexión a internet.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noclastic.github.io/sutura/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#inicio" class="navbar-brand">
+                <img src="assets/icon.png" alt="Sutura icon">
+                <span>Sutura</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <div class="navbar-links" id="navLinks">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#descargar">Descargar</a>
+                <a href="https://github.com/noclastic/sutura" target="_blank" rel="noopener" class="nav-icon-link">
+                    <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/robertogetinogarcia/" target="_blank" rel="noopener" class="nav-icon-link">
+                    <svg viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 01.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Privacidad garantizada
+                </div>
+
+                <h1 class="hero-title">
+                    Fusiona tus PDFs<br>
+                    <span class="gradient-text">sin conexión</span>
+                </h1>
+
+                <p class="hero-description">
+                    Sutura garantiza la privacidad de tus documentos
+                    fusionando archivos PDF de forma completamente local.
+                    Diseñado para profesionales que manejan información sensible.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#descargar" class="btn btn-primary" id="hero-download-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Descargar Sutura
+                    </a>
+                    <a href="https://github.com/noclastic/sutura" target="_blank" rel="noopener" class="btn btn-secondary" id="hero-github-btn">
+                        <svg viewBox="0 0 16 16" fill="currentColor" width="18" height="18"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img src="assets/app-screenshot.png" alt="Interfaz de Sutura - Fusionador de PDFs" id="hero-screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FEATURES ======== -->
+    <section class="features" id="funcionalidades">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Funcionalidades</div>
+                <h2 class="section-title">Todo lo que necesitas para gestionar PDFs</h2>
+                <p class="section-subtitle">
+                    Cada función diseñada para la máxima productividad y privacidad de tus documentos.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card reveal reveal-delay-1" id="feature-offline">
+                    <div class="feature-icon blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0110 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>100% Offline</h3>
+                    <p>Tus documentos nunca salen de tu equipo. Sin servidores externos, sin exposición a la red. Privacidad total.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card reveal reveal-delay-2" id="feature-dragdrop">
+                    <div class="feature-icon cyan">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 16 12 12 8 16"/>
+                            <line x1="12" y1="12" x2="12" y2="21"/>
+                            <path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3"/>
+                        </svg>
+                    </div>
+                    <h3>Drag & Drop</h3>
+                    <p>Arrastra y suelta tus archivos PDF directamente en la aplicación. Interfaz intuitiva sin curva de aprendizaje.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card reveal reveal-delay-3" id="feature-order">
+                    <div class="feature-icon green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="8" y1="6" x2="21" y2="6"/>
+                            <line x1="8" y1="12" x2="21" y2="12"/>
+                            <line x1="8" y1="18" x2="21" y2="18"/>
+                            <line x1="3" y1="6" x2="3.01" y2="6"/>
+                            <line x1="3" y1="12" x2="3.01" y2="12"/>
+                            <line x1="3" y1="18" x2="3.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Ordena y Reorganiza</h3>
+                    <p>Reordena los documentos con controles intuitivos antes de fusionarlos. Obtén el resultado exacto que necesitas.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card reveal reveal-delay-1" id="feature-fast">
+                    <div class="feature-icon amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3>Fusión Rápida</h3>
+                    <p>Motor de procesamiento optimizado que fusiona múltiples PDFs en segundos, sin importar el tamaño de los archivos.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="feature-card reveal reveal-delay-2" id="feature-ui">
+                    <div class="feature-icon purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Interfaz Profesional</h3>
+                    <p>Diseño moderno, limpio y accesible. Una interfaz que se adapta a flujos de trabajo profesionales exigentes.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="feature-card reveal reveal-delay-3" id="feature-logs">
+                    <div class="feature-icon rose">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>Sistema de Logs</h3>
+                    <p>Registro detallado de todas las operaciones realizadas. Trazabilidad completa para auditorías y control de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== DOWNLOAD ======== -->
+    <section class="download" id="descargar">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Descarga
+                </div>
+                <h2 class="section-title">Obtén Sutura</h2>
+                <p class="section-subtitle">
+                    Descarga la última versión estable y empieza a fusionar tus PDFs con total privacidad.
+                </p>
+            </div>
+
+            <div class="download-card reveal">
+                <div class="release-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    v1.0.0 — Stable Release
+                </div>
+
+                <h3>Sutura v1.0.0</h3>
+
+                <p class="description">
+                    Herramienta de fusión de PDFs offline lista para entornos profesionales.
+                    Incluye drag & drop, reordenación intuitiva y sistema de logs exportable.
+                </p>
+
+                <a href="https://github.com/noclastic/sutura/releases" target="_blank" rel="noopener" class="btn btn-download" id="download-release-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Descargar desde GitHub
+                </a>
+
+                <div class="download-meta">
+                    <div class="download-meta-item">
+                        <div class="label">Versión</div>
+                        <div class="value">1.0.0</div>
+                    </div>
+                    <div class="download-meta-item">
+                        <div class="label">Sistema Operativo</div>
+                        <div class="value">Windows 11</div>
+                    </div>
+                    <div class="download-meta-item">
+                        <div class="label">Lenguaje</div>
+                        <div class="value">Python 3.14</div>
+                    </div>
+                    <div class="download-meta-item">
+                        <div class="label">Licencia</div>
+                        <div class="value">Personal Use</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== OPEN SOURCE ======== -->
+    <section class="open-source" id="codigo">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    Open Source
+                </div>
+                <h2 class="section-title">Código abierto y transparente</h2>
+                <p class="section-subtitle">
+                    Explora el código, contribuye y forma parte de la comunidad.
+                </p>
+            </div>
+
+            <div class="open-source-grid">
+                <!-- GitHub Card -->
+                <div class="os-card reveal reveal-delay-1">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    </div>
+                    <h3>Repositorio GitHub</h3>
+                    <p>Revisa el código fuente, reporta issues, proporciona feedback o contribuye al proyecto con mejoras y nuevas funcionalidades.</p>
+                    <a href="https://github.com/noclastic/sutura" target="_blank" rel="noopener" class="card-link">
+                        Ver repositorio →
+                    </a>
+                </div>
+
+                <!-- Code Block Card -->
+                <div class="code-block reveal reveal-delay-2">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                    </div>
+                    <div class="code-body">
+                        <div class="comment"># Clonar el repositorio</div>
+                        <div class="command"><span class="prompt">$</span> git clone</div>
+                        <div class="url">https://github.com/noclastic/sutura.git</div>
+                        <div class="command"><span class="prompt">$</span> cd <span class="highlight">sutura</span></div>
+                        <div class="command"><span class="prompt">$</span> pip install -r <span class="highlight">requirements.txt</span></div>
+                        <div class="command"><span class="prompt">$</span> python <span class="highlight">main.py</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== SUPPORT / DONATE ======== -->
+    <section class="support" id="apoyar">
+        <div class="container">
+            <div class="support-card reveal">
+                <h3>☕ Apoya el proyecto</h3>
+                <p class="description">
+                    Si te gusta Sutura y quieres apoyar su desarrollo, puedes hacerlo con una donación
+                    o simplemente compartiendo el proyecto con otros profesionales.
+                </p>
+                <div class="support-actions">
+                    <a href="https://github.com/sponsors/noclastic" target="_blank" rel="noopener" class="btn btn-primary" id="sponsor-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        GitHub Sponsors
+                    </a>
+                    <a href="https://github.com/noclastic/sutura" target="_blank" rel="noopener" class="btn btn-secondary" id="share-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                            <circle cx="18" cy="5" r="3"/>
+                            <circle cx="6" cy="12" r="3"/>
+                            <circle cx="18" cy="19" r="3"/>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                        </svg>
+                        Compartir proyecto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="assets/icon.png" alt="Sutura">
+                <span>© 2026 Sutura — Roberto Getino</span>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#descargar">Descargar</a>
+                <a href="https://github.com/noclastic/sutura" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/robertogetinogarcia/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
